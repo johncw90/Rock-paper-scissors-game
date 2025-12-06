@@ -18,7 +18,6 @@ let humanScore = 0;
 let computerScore = 0;
 let playRound = function (humanChoice, computerChoice) {
   computerChoice = getComputerChoice();
-  console.log("You chose: " + humanChoice + " Computer chose: " + computerChoice);
 
   if (humanChoice === computerChoice) {
     result = "Tie round!";
@@ -50,14 +49,6 @@ let playRound = function (humanChoice, computerChoice) {
     winnerDiv.textContent = winnerMsg;
   }
 };
-
-if (humanScore > computerScore) {
-  console.log("You win the game!");
-} else if (computerScore > humanScore) {
-  console.log("Computer wins the game!");
-} else {
-  console.log("No winner - Tie game!");
-}
 
 let rockBtn = document.querySelector(".rock");
 let paperBtn = document.querySelector(".paper");
